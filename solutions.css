@@ -134,18 +134,23 @@
 
 /*esercizio 13*/
 .ex-13-button:hover .ex-13-top-white{
-    animation: ex-13-top 3s linear;
+    animation: ex-13-top 2s linear;
 }
 
 .ex-13-button:hover .ex-13-bottom-white{
     animation: ex-13-bottom 2s linear;
 }
 
-/*@keyframes ex-13-bottom {
-    50% {right:calc(100% - 60px);}
-    100%{}
-}*/
+@keyframes ex-13-bottom {
+    30%{right:calc(100% - 30px); bottom: 0;}
+    50%{right:calc(100% - 30px); bottom: 100%;}
+    70%{right: 0; bottom: 100%;}
+    90%{right:-20px; bottom:0px;}
+}
 
 @keyframes ex-13-top {
-    0%{}
+    30%{left:calc(100% - 30px); top: 0;}
+    50%{left:calc(100% - 30px); top: 100%;}
+    70%{left: 0; top: 100%;}
+    90%{left:-20px; top:0px;}
 }
